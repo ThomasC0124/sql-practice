@@ -24,7 +24,7 @@ if __name__ == '__main__':
     _configure_logger()
     logger = logging.getLogger(__name__)
     
-    conn = sqlite3.connect('phonebook.db')
+    conn = sqlite3.connect('sqlite_phonebook.db')
     # create person and address tables
     person_schema = '''
         id INTEGER PRIMARY KEY ASC,
